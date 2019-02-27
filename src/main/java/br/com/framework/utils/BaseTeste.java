@@ -9,7 +9,7 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.rules.TestName;
 
-
+import br.com.framework.relatorios.GerarPdf;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
@@ -32,6 +32,7 @@ public class BaseTeste {
 	
 	@AfterClass
 	public static void killDriver() {
+		GerarPdf.montaPdf();
 		driver.quit();
 	}
 	

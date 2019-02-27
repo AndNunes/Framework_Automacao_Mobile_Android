@@ -24,4 +24,8 @@ public class Evidencias {
 			e.printStackTrace();
 		}
 	}
+	
+	public static int getNumeroEvidencias() {
+		return numeroEvidencia;
+	}
 }

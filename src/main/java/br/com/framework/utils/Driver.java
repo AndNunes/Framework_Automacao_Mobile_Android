@@ -42,7 +42,6 @@ public class Driver {
 	}
 	
 	private static void criaLeitorPropertie() {
-		System.out.println("Erro na criação do Propertie");
 		leitorProerties = new LeitorProerties();
 	}
 	
