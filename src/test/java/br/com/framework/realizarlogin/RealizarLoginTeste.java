@@ -21,6 +21,5 @@ public class RealizarLoginTeste extends BaseTeste {
 		//Realizar Login
 		loginPage.realizarLogin("anderson@teste", "911209167");
 		System.out.println("Logado");
-		
 	}
 }
