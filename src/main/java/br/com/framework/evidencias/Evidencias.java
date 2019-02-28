@@ -28,4 +28,8 @@ public class Evidencias {
 	public static int getNumeroEvidencias() {
 		return numeroEvidencia;
 	}
+	
+	public static void zerarEvidencias() {
+		numeroEvidencia = 0;
+	}
 }
