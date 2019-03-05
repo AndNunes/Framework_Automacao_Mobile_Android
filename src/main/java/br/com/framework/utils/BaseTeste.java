@@ -1,38 +1,61 @@
 package br.com.framework.utils;
 
-import java.net.MalformedURLException;
-
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-//import org.junit.BeforeClass;
-import org.junit.Rule;
-import org.junit.rules.TestName;
-
+import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import br.com.framework.evidencias.Evidencias;
 import br.com.framework.relatorios.GerarPdf;
+import br.com.framework.relatorios.extentreport.GerarExtentReport;
 
 public class BaseTeste {
 	
-	public static String nomeTeste = "";
+	private static String nomeTeste = "";
 	
-	@Rule
-	public TestName testName = new TestName();	
-
-	@Before
-	public void inicializa() throws MalformedURLException {
+	public static String getNomeTeste() {
+		return nomeTeste;
+	}
+	
+	public static void setNomeTeste(String nome) {
+		nomeTeste = nome;
+	}
+		
+	@BeforeTest
+	public void setUpTest() {
+		GerarExtentReport.startReporter();
+	}
+	
+	@BeforeClass(alwaysRun = true)
+	public void setUpClass() throws Exception {
+		
 		Driver.setUpDriver();
-		nomeTeste = testName.getMethodName();
-	}
-	
-	@After
-	public void killDriver() {
-		Driver.getDriver().resetApp();
-		GerarPdf.montaPdf();
-	}
-	
-	@AfterClass
-	public static void KillDriver() {
 		Evidencias.zerarEvidencias();
+	}
+		
+	@AfterClass(alwaysRun = true)
+	public void tearDownClass() throws Exception {
+	
+		GerarPdf.montaPdf();
+		Driver.getDriver().resetApp();
+	}
+	
+	@AfterSuite(alwaysRun = true)
+	public void executaFimSuite() throws Throwable {
+		
+		Driver.KillDriver();
+	}
+	
+	@AfterMethod
+	public void getResult(ITestResult result) {
+		
+		GerarExtentReport.setResults(result);
+	}
+	
+	@AfterTest
+	public void tearDown() {
+		GerarExtentReport.extents.flush();
 	}
 }

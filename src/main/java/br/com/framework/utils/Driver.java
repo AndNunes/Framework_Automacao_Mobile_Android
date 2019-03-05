@@ -25,10 +25,16 @@ public class Driver {
 		return driver;
 	}
 	
-	public static void updateDriver() {
-		
+	public static void KillDriver() {
+		fechaDriver();
 	}
-
+	
+	private static void fechaDriver() {
+		if(driver != null) {
+			driver.quit();
+		}
+	}
+	
 	public static void setUpDriver() {
 		criaLeitorPropertie();
 		getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -41,8 +47,9 @@ public class Driver {
 		desiredCapabilities.setCapability("platformName", leitorProerties.getValor("platformName"));
 		desiredCapabilities.setCapability("deviceName", leitorProerties.getValor("emulator"));
 		desiredCapabilities.setCapability("automationName", "uiautomator2");
-		desiredCapabilities.setCapability(MobileCapabilityType.APP,
-				System.getProperty("user.dir") + leitorProerties.getValor("caminhoApk"));
+		//desiredCapabilities.setCapability("appPackage", "adivinha.anderson.com.adivinha");
+		//desiredCapabilities.setCapability("appActivity", "adivinha.anderson.com.adivinha.MainActivity");
+		desiredCapabilities.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir") + leitorProerties.getValor("caminhoApk"));
 
 		try {
 			driver = new AndroidDriver<MobileElement>(new URL("http://localhost:4723/wd/hub"), desiredCapabilities);

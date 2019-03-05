@@ -29,7 +29,7 @@ public class GerarPdf {
 		try {
 			
 			configuraDocument(document);
-			PdfWriter.getInstance(document, new FileOutputStream(System.getProperty("user.dir") + "\\relatorios_Pdf\\" + BaseTeste.nomeTeste + ".pdf"));
+			PdfWriter.getInstance(document, new FileOutputStream(System.getProperty("user.dir") + "\\relatorios_Pdf\\" + BaseTeste.getNomeTeste().replaceAll(" ", "_") + ".pdf"));
 			document.open();
 			
 			
@@ -97,7 +97,7 @@ public class GerarPdf {
 
 			try {
 				
-				imagem = Image.getInstance(System.getProperty("user.dir") + "\\evidencias\\realizarLogin\\EV_" + i + ".png");
+				imagem = Image.getInstance(System.getProperty("user.dir") + "\\evidencias\\"+ BaseTeste.getNomeTeste().replaceAll(" ", "_") +"\\EV_" + i + ".png");
 				imagem.scaleToFit(1000, 500);
 				imagem.setAlignment(Element.ALIGN_CENTER);
 				document.add(imagem);
@@ -137,7 +137,7 @@ public class GerarPdf {
 	 * */
 	private static void montaCabecalho(Document document) {
 		
-		Paragraph cenarioTeste = new Paragraph("Cenário: " + BaseTeste.nomeTeste, tipoFonte("Cabecalho"));
+		Paragraph cenarioTeste = new Paragraph("Cenário: " + BaseTeste.getNomeTeste(), tipoFonte("Cabecalho"));
 		Paragraph paragrafoDevice = new Paragraph("Aparelho: " + Driver.leitorProerties.getValor("aparelhoExecucao"),
 				tipoFonte("Cabecalho"));
 		Paragraph plataformaExecucao = new Paragraph("Plataforma: " + Driver.leitorProerties.getValor("platformName"), tipoFonte("Cabecalho"));

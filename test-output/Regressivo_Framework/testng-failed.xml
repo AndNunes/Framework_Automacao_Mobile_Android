@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regressivo_Framework]">
+  <test thread-count="5" name="DOC Test(failed)">
+    <classes>
+      <class name="br.com.framework.test.RealizarOutroLoginTeste">
+        <methods>
+          <include name="getResult"/>
+          <include name="setUpClass"/>
+          <include name="executaFimSuite"/>
+          <include name="tearDown"/>
+          <include name="realizarOutroLogin"/>
+          <include name="setUpTest"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- br.com.framework.test.RealizarOutroLoginTeste -->
+    </classes>
+  </test> <!-- DOC Test(failed) -->
+</suite> <!-- Failed suite [Regressivo_Framework] -->

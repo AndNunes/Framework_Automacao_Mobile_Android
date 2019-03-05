@@ -19,7 +19,7 @@ public class Evidencias {
 
 		File imagem = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(imagem, new File("evidencias/" + BaseTeste.nomeTeste + "/EV_"+ ++numeroEvidencia +".png"));
+			FileUtils.copyFile(imagem, new File("evidencias/"+ BaseTeste.getNomeTeste().replaceAll(" ", "_") +"/EV_"+ ++numeroEvidencia +".png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

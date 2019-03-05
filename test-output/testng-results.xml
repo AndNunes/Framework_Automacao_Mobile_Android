@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="32547" started-at="2019-03-05T16:46:07Z" finished-at="2019-03-05T16:46:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="32547" started-at="2019-03-05T16:46:07Z" finished-at="2019-03-05T16:46:39Z">
+      <class name="br.com.framework.test.RealizarLoginTeste">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@2d928643]" name="setUpTest" is-config="true" duration-ms="164" started-at="2019-03-05T16:46:07Z" finished-at="2019-03-05T16:46:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@2d928643]" name="setUpClass" is-config="true" duration-ms="18896" started-at="2019-03-05T16:46:07Z" finished-at="2019-03-05T16:46:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="realizarLogin()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@2d928643]" name="realizarLogin" duration-ms="10187" started-at="2019-03-05T16:46:26Z" finished-at="2019-03-05T16:46:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- realizarLogin -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:br.com.framework.test.RealizarLoginTeste@2d928643]" name="getResult" is-config="true" duration-ms="8" started-at="2019-03-05T16:46:36Z" finished-at="2019-03-05T16:46:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=realizarLogin status=SUCCESS method=RealizarLoginTeste.realizarLogin()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@2d928643] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@2d928643]" name="tearDownClass" is-config="true" duration-ms="2860" started-at="2019-03-05T16:46:36Z" finished-at="2019-03-05T16:46:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@2d928643]" name="tearDown" is-config="true" duration-ms="407" started-at="2019-03-05T16:46:39Z" finished-at="2019-03-05T16:46:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="executaFimSuite()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@2d928643]" name="executaFimSuite" is-config="true" duration-ms="694" started-at="2019-03-05T16:46:39Z" finished-at="2019-03-05T16:46:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executaFimSuite -->
+      </class> <!-- br.com.framework.test.RealizarLoginTeste -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

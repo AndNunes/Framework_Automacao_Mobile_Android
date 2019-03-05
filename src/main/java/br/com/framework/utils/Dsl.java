@@ -13,8 +13,19 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidDriver;
 
 public class Dsl {
+	
+	private static AndroidDriver<MobileElement> driver;
+	private static WebDriverWait wait;
+	
+	public static void updateDriver() {
+		
+		driver = getDriver();
+		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		wait = new WebDriverWait(driver, 10);
+	}
 
 	/* ---------------- Métodos para Click ---------------- */
 	
@@ -64,7 +75,11 @@ public class Dsl {
 	}
 
 	public static void waitVisible(By by) {
-		WebDriverWait wait = new WebDriverWait(getDriver(), 10);
+		wait.until(ExpectedConditions.presenceOfElementLocated(by));
+	}
+	
+	public static void waitVisible(By by, int tempo) {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.presenceOfElementLocated(by));
 	}
 
@@ -218,4 +233,5 @@ public class Dsl {
 		
 		return getDriver().findElement(by).getText();
 	}
+
 }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regressivo_Framework">
+	<test name="DOC Test" annotations="JDK" preserve-order="true">
+		<classes>
+			<class name="br.com.framework.test.RealizarLoginTeste" />
+			<class name="br.com.framework.test.RealizarOutroLoginTeste" />
+		</classes>
+	</test>
+</suite>
