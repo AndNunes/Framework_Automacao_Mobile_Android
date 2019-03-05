@@ -8,11 +8,31 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">32,547</td><td></td><td></td></tr>
+<tr><th colspan="7">Regressivo_Framework</th></tr>
+<tr><td><a href="#t0">DOC Test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">41,713</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">br.com.framework.test.RealizarLoginTeste</td><td><a href="#m0">realizarLogin</a></td><td rowspan="1">1551804386260</td><td rowspan="1">10187</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regressivo_Framework</th></tr></tbody><tbody id="t0"><tr><th colspan="4">DOC Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">br.com.framework.test.RealizarOutroLoginTeste</td><td><a href="#m0">realizarOutroLogin</a></td><td rowspan="1">1551810458608</td><td rowspan="1">10697</td></tr><tr><th colspan="4">DOC Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">br.com.framework.test.RealizarLoginTeste</td><td><a href="#m1">realizarLogin</a></td><td rowspan="1">1551810446950</td><td rowspan="1">8677</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">br.com.framework.test.RealizarLoginTeste#realizarLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>DOC Test</h2><h3 id="m0">br.com.framework.test.RealizarOutroLoginTeste#realizarOutroLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.TextView[@text=&apos;SeuBarriga Nativo&apos;] (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at br.com.framework.utils.Dsl.waitVisible(Dsl.java:78)
+	at br.com.framework.businesspages.MenuPage.acessarSeuBarrigaNativo(MenuPage.java:16)
+	at br.com.framework.test.RealizarOutroLoginTeste.realizarOutroLogin(RealizarOutroLoginTeste.java:29)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //android.widget.TextView[@text=&apos;SeuBarriga Nativo&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;LAPTOP-GGRP9JA9&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:882)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:881)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 28 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">br.com.framework.test.RealizarLoginTeste#realizarLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

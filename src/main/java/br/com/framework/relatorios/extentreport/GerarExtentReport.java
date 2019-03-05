@@ -28,7 +28,10 @@ public class GerarExtentReport {
 	}
 
 	public static void startReporter() {
-
+		
+		System.out.println(System.getProperty("user.dir"));
+		System.out.println(Driver.leitorProerties.getValor("caminhoRelatorioExtentReport"));
+		
 		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + Driver.leitorProerties.getValor("caminhoRelatorioExtentReport"));
 		extents = new ExtentReports();
 		extents.attachReporter(htmlReporter);

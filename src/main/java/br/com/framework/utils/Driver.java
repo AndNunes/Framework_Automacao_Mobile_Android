@@ -36,7 +36,7 @@ public class Driver {
 	}
 	
 	public static void setUpDriver() {
-		criaLeitorPropertie();
+
 		getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
@@ -59,7 +59,7 @@ public class Driver {
 
 	}
 
-	private static void criaLeitorPropertie() {
+	public static void criaLeitorPropertie() {
 		leitorProerties = new LeitorProerties();
 	}
 

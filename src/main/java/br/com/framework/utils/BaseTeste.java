@@ -25,19 +25,21 @@ public class BaseTeste {
 		
 	@BeforeTest
 	public void setUpTest() {
+	
+		Driver.criaLeitorPropertie();
 		GerarExtentReport.startReporter();
 	}
 	
 	@BeforeClass(alwaysRun = true)
 	public void setUpClass() throws Exception {
-		
+	
 		Driver.setUpDriver();
 		Evidencias.zerarEvidencias();
 	}
 		
 	@AfterClass(alwaysRun = true)
 	public void tearDownClass() throws Exception {
-	
+		
 		GerarPdf.montaPdf();
 		Driver.getDriver().resetApp();
 	}
@@ -50,12 +52,13 @@ public class BaseTeste {
 	
 	@AfterMethod
 	public void getResult(ITestResult result) {
-		
+	
 		GerarExtentReport.setResults(result);
 	}
 	
 	@AfterTest
 	public void tearDown() {
+	
 		GerarExtentReport.extents.flush();
 	}
 }

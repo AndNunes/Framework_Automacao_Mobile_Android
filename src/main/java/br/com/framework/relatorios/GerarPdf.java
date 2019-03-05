@@ -60,7 +60,7 @@ public class GerarPdf {
 		Image imagemCabecalho = null;
 
 		try {
-			imagemCabecalho = Image.getInstance("C:\\Users\\PC-Notebook\\Documents\\logo_Foton.png");
+			imagemCabecalho = Image.getInstance(System.getProperty("user.dir") + "\\images\\logo_Foton.png");
 			imagemCabecalho.scaleToFit(1000, 100);
 			imagemCabecalho.getAbsoluteX();
 			document.add(imagemCabecalho);
