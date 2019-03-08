@@ -3,8 +3,8 @@ package br.com.framework.test;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import br.com.framework.businesspages.LoginPage;
-import br.com.framework.businesspages.MenuPage;
+import br.com.framework.business.LoginPage;
+import br.com.framework.business.MenuPage;
 import br.com.framework.evidencias.Evidencias;
 import br.com.framework.relatorios.extentreport.GerarExtentReport;
 import br.com.framework.utils.BaseTeste;

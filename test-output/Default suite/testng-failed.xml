@@ -3,15 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="br.com.framework.relatorios.extentreport.GerarExtentReport">
+      <class name="br.com.framework.loginteste.LoginTeste">
         <methods>
-          <include name="testFail"/>
+          <include name="feature"/>
           <include name="tearDown"/>
-          <include name="startReport"/>
-          <include name="testSkip"/>
+          <include name="setUpTest"/>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="executaFimSuite"/>
           <include name="getResult"/>
         </methods>
-      </class> <!-- br.com.framework.relatorios.extentreport.GerarExtentReport -->
+      </class> <!-- br.com.framework.loginteste.LoginTeste -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

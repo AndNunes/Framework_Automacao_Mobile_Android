@@ -2,53 +2,53 @@
 <testng-results skipped="0" failed="1" ignored="3" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Regressivo_Framework" duration-ms="41713" started-at="2019-03-05T18:27:10Z" finished-at="2019-03-05T18:27:52Z">
+  <suite name="Regressivo_Framework" duration-ms="49684" started-at="2019-03-08T03:12:43Z" finished-at="2019-03-08T03:13:33Z">
     <groups>
     </groups>
-    <test name="DOC Test" duration-ms="41713" started-at="2019-03-05T18:27:10Z" finished-at="2019-03-05T18:27:52Z">
+    <test name="DOC Test" duration-ms="49684" started-at="2019-03-08T03:12:43Z" finished-at="2019-03-08T03:13:33Z">
       <class name="br.com.framework.test.RealizarLoginTeste">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@5025a98f]" name="setUpTest" is-config="true" duration-ms="162" started-at="2019-03-05T18:27:10Z" finished-at="2019-03-05T18:27:10Z">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@13805618]" name="setUpTest" is-config="true" duration-ms="195" started-at="2019-03-08T03:12:43Z" finished-at="2019-03-08T03:12:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@5025a98f]" name="setUpClass" is-config="true" duration-ms="16028" started-at="2019-03-05T18:27:10Z" finished-at="2019-03-05T18:27:26Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@13805618]" name="setUpClass" is-config="true" duration-ms="16337" started-at="2019-03-08T03:12:44Z" finished-at="2019-03-08T03:13:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="realizarLogin()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@5025a98f]" name="realizarLogin" duration-ms="8677" started-at="2019-03-05T18:27:26Z" finished-at="2019-03-05T18:27:35Z">
+        <test-method status="PASS" signature="realizarLogin()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@13805618]" name="realizarLogin" duration-ms="17454" started-at="2019-03-08T03:13:00Z" finished-at="2019-03-08T03:13:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- realizarLogin -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:br.com.framework.test.RealizarLoginTeste@5025a98f]" name="getResult" is-config="true" duration-ms="10" started-at="2019-03-05T18:27:35Z" finished-at="2019-03-05T18:27:35Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:br.com.framework.test.RealizarLoginTeste@13805618]" name="getResult" is-config="true" duration-ms="9" started-at="2019-03-08T03:13:17Z" finished-at="2019-03-08T03:13:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=realizarLogin status=SUCCESS method=RealizarLoginTeste.realizarLogin()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@5025a98f] output={null}]]]>
+                <![CDATA[[TestResult name=realizarLogin status=SUCCESS method=RealizarLoginTeste.realizarLogin()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@13805618] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@5025a98f]" name="tearDownClass" is-config="true" duration-ms="2960" started-at="2019-03-05T18:27:35Z" finished-at="2019-03-05T18:27:38Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@13805618]" name="tearDownClass" is-config="true" duration-ms="2456" started-at="2019-03-08T03:13:17Z" finished-at="2019-03-08T03:13:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@5025a98f]" name="tearDown" is-config="true" duration-ms="394" started-at="2019-03-05T18:27:52Z" finished-at="2019-03-05T18:27:52Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@13805618]" name="tearDown" is-config="true" duration-ms="484" started-at="2019-03-08T03:13:33Z" finished-at="2019-03-08T03:13:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="executaFimSuite()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@5025a98f]" name="executaFimSuite" is-config="true" duration-ms="576" started-at="2019-03-05T18:27:52Z" finished-at="2019-03-05T18:27:53Z">
+        <test-method status="PASS" signature="executaFimSuite()[pri:0, instance:br.com.framework.test.RealizarLoginTeste@13805618]" name="executaFimSuite" is-config="true" duration-ms="593" started-at="2019-03-08T03:13:33Z" finished-at="2019-03-08T03:13:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executaFimSuite -->
       </class> <!-- br.com.framework.test.RealizarLoginTeste -->
       <class name="br.com.framework.test.RealizarOutroLoginTeste">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:br.com.framework.test.RealizarOutroLoginTeste@49993335]" name="setUpClass" is-config="true" duration-ms="6" started-at="2019-03-05T18:27:38Z" finished-at="2019-03-05T18:27:38Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:br.com.framework.test.RealizarOutroLoginTeste@56ef9176]" name="setUpClass" is-config="true" duration-ms="8" started-at="2019-03-08T03:13:20Z" finished-at="2019-03-08T03:13:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="realizarOutroLogin()[pri:0, instance:br.com.framework.test.RealizarOutroLoginTeste@49993335]" name="realizarOutroLogin" duration-ms="10697" started-at="2019-03-05T18:27:38Z" finished-at="2019-03-05T18:27:49Z">
+        <test-method status="FAIL" signature="realizarOutroLogin()[pri:0, instance:br.com.framework.test.RealizarOutroLoginTeste@56ef9176]" name="realizarOutroLogin" duration-ms="10377" started-at="2019-03-08T03:13:20Z" finished-at="2019-03-08T03:13:30Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.TextView[@text='SeuBarriga Nativo'] (tried for 10 second(s) with 500 MILLISECONDS interval)]]>
@@ -58,7 +58,7 @@
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 at br.com.framework.utils.Dsl.waitVisible(Dsl.java:78)
-at br.com.framework.businesspages.MenuPage.acessarSeuBarrigaNativo(MenuPage.java:16)
+at br.com.framework.business.MenuPage.acessarSeuBarrigaNativo(MenuPage.java:16)
 at br.com.framework.test.RealizarOutroLoginTeste.realizarOutroLogin(RealizarOutroLoginTeste.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -104,18 +104,18 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- realizarOutroLogin -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:br.com.framework.test.RealizarOutroLoginTeste@49993335]" name="getResult" is-config="true" duration-ms="8" started-at="2019-03-05T18:27:49Z" finished-at="2019-03-05T18:27:49Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:br.com.framework.test.RealizarOutroLoginTeste@56ef9176]" name="getResult" is-config="true" duration-ms="6" started-at="2019-03-08T03:13:30Z" finished-at="2019-03-08T03:13:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=realizarOutroLogin status=FAILURE method=RealizarOutroLoginTeste.realizarOutroLogin()[pri:0, instance:br.com.framework.test.RealizarOutroLoginTeste@49993335] output={null}]]]>
+                <![CDATA[[TestResult name=realizarOutroLogin status=FAILURE method=RealizarOutroLoginTeste.realizarOutroLogin()[pri:0, instance:br.com.framework.test.RealizarOutroLoginTeste@56ef9176] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:br.com.framework.test.RealizarOutroLoginTeste@49993335]" name="tearDownClass" is-config="true" duration-ms="2731" started-at="2019-03-05T18:27:49Z" finished-at="2019-03-05T18:27:52Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:br.com.framework.test.RealizarOutroLoginTeste@56ef9176]" name="tearDownClass" is-config="true" duration-ms="2322" started-at="2019-03-08T03:13:30Z" finished-at="2019-03-08T03:13:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

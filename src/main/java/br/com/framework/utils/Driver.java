@@ -47,8 +47,8 @@ public class Driver {
 		desiredCapabilities.setCapability("platformName", leitorProerties.getValor("platformName"));
 		desiredCapabilities.setCapability("deviceName", leitorProerties.getValor("emulator"));
 		desiredCapabilities.setCapability("automationName", "uiautomator2");
-		//desiredCapabilities.setCapability("appPackage", "adivinha.anderson.com.adivinha");
-		//desiredCapabilities.setCapability("appActivity", "adivinha.anderson.com.adivinha.MainActivity");
+//		desiredCapabilities.setCapability("appPackage", "br.gov.caixa.ecobrancamobile");
+//		desiredCapabilities.setCapability("appActivity", "br.gov.caixa.ecobrancamobile.view.activities.MainActivity");
 		desiredCapabilities.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir") + leitorProerties.getValor("caminhoApk"));
 
 		try {

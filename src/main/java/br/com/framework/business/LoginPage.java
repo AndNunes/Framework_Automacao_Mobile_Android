@@ -1,4 +1,4 @@
-package br.com.framework.businesspages;
+package br.com.framework.business;
 
 import br.com.framework.evidencias.Evidencias;
 import br.com.framework.pageobjects.LoginPageObjects;
